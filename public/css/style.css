@@ -1,0 +1,158 @@
+/* The extremely poor man's reset. */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/************** GENERAL STUFF */
+body {
+  color: white;
+  font: 16px QuicksandBook;
+  margin-top: 100px;
+  /* http://www.impressivewebs.com/css3-radial-gradient-syntax/ */
+  /* This is the fancy-pants new syntax. */
+  background-image: -webkit-radial-gradient(
+    right top,    /* where to start the gradient */
+    circle cover, /* circle-shaped, cover the entire element */
+
+    /* color stops: the colors that make up the gradient, in order. */
+    /* MOOOOOOON */
+    #DDD              3%,  /* gray - the color of the moon */
+    white            10%,  /* moon-glow */
+    rgb(21, 25, 26)  11%,  /* gray again, to transition into blue. Start at low % to cut off white glow.*/
+    rgb(6, 7, 60)    30%,  /* super dark blue */
+    rgb(53, 28, 53)  80%,  /* light purple */
+    rgb(111, 17, 76) 99%   /* magenta */
+  );
+
+  background-image: -moz-radial-gradient(right top, circle cover,
+    #DDD              3%,
+    white            10%,
+    rgb(21, 25, 26)  11%,
+    rgb(6, 7, 60)    30%,
+    rgb(53, 28, 53)  80%,
+    rgb(111, 17, 76) 99%
+  );
+}
+
+em {
+  font-family: QuicksandBookOblique;
+}
+
+#container {
+  /* Use a column that is the width of the heading. */
+  width: 600px;
+  margin: 0 auto;
+}
+
+/************** HEADING  */
+#heading {
+  padding-bottom: 85px;
+}
+
+#heading h1 {
+  font-size: 54px;
+  line-height: 90px;
+  padding-bottom: 10px;
+}
+
+#heading h1 .the-moon {
+  font-family: "Helvetica Neue";
+}
+
+#heading h2 {
+  font-size: 30px;
+  line-height: 40px;
+  /* Super pro tip from C-mazz for thin fonts!
+   * This text-shadow is the same color as the background, sort of coloring the
+   * inside and making the outer edges disappear into the background.
+   */
+  text-shadow: 0 0 1px rgb(11, 4, 66);
+}
+
+/************** CONTENT */
+#content {
+  padding-bottom: 45px;
+}
+
+/************** CHART */
+#chart {
+  margin-bottom: 50px;
+}
+
+/************** TESTIMONIALS */
+
+#testimonials {
+  float: left;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#testimonials .testimonial {
+  float: left;
+  width: 260px;
+  height: 250px;
+}
+
+#testimonials #top-two {
+  margin-bottom: 90px;
+}
+
+#testimonials .testimonial.right {
+  margin-left: 70px;
+}
+
+.testimonial .title {
+  font: 25px "Helvetica Neue";
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.testimonial .title em {
+  font-family: "Helvetica Neue";
+}
+
+.testimonial .copy {
+  margin-bottom: 5px;
+  line-height: 140%;
+}
+
+.testimonial .author {
+  font-family: QuicksandBookOblique;
+}
+
+/************** FOOTER */
+
+#footer {
+  float: left;
+  margin-bottom: 200px;
+  font-size: 20px;
+}
+
+.share {
+  float: left;
+  width: 240px;
+  background: rgba(0, 0, 0, .2);
+  padding: 20px 20px 0 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.4);
+  -o-box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.share:first-child {
+  margin-right: 30px;
+}
+
+#footer .hashtag {
+  float: left;
+}
+
+#footer .tweet-button {
+  float: right;
+  width: 55px;
+  height: 40px;
+  margin-right: 20px;
+}
