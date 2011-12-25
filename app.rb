@@ -8,5 +8,5 @@ get '/' do
 end
 
 get '/css/:stylesheet.css' do
-  scss params[:stylesheet].to_sym, views: settings.views + '/css'
+  scss :"css/#{params[:stylesheet]}"
 end
