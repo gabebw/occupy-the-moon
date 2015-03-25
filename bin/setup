@@ -1,0 +1,3 @@
+#!/bin/sh
+
+heroku git:remote --app occupy-the-moon
