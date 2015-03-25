@@ -26,7 +26,7 @@ body {
   // This is the fancy-pants new syntax.
   // start the gradient at the top right and make it circle shaped
   // The colors are called "color stops"
-  @include radial-gradient(right top, circle cover,
+  background-image: radial-gradient(circle farthest-corner at right top,
     $moon-gray,
     $moon-glow,
     $gray-into-blue,
