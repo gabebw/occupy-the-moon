@@ -7,23 +7,32 @@
 //************** GENERAL STUFF
 
 body {
+  // gray, the color of the part that looks like an actual moon
+  $moon-gray: #DDD 3%;
+  // the soft glow of the moon
+  $moon-glow: #FFF 10%;
+  // gray again, to transition into blue. Start at low % to cut off white glow.
+  $gray-into-blue: rgb(21, 25, 26) 11%;
+  // super dark blue
+  $dark-blue: rgb(6, 7, 60) 30%;
+  // light purple
+  $light-purple: rgb(53, 28, 53) 80%;
+  $magenta: rgb(111, 17, 76) 99%;
+
   color: white;
   font: 16px QuicksandBook;
   margin-top: 100px;
   // http://www.impressivewebs.com/css3-radial-gradient-syntax/
   // This is the fancy-pants new syntax.
-  @include radial-gradient(
-    right top,    /* where to start the gradient */
-    circle cover, /* circle-shaped, cover the entire element */
-
-    /* color stops: the colors that make up the gradient, in order. */
-    /* MOOOOOOON */
-    #DDD              3%,  /* gray - the color of the moon */
-    white            10%,  /* moon-glow */
-    rgb(21, 25, 26)  11%,  /* gray again, to transition into blue. Start at low % to cut off white glow.*/
-    rgb(6, 7, 60)    30%,  /* super dark blue */
-    rgb(53, 28, 53)  80%,  /* light purple */
-    rgb(111, 17, 76) 99%   /* magenta */
+  // start the gradient at the top right and make it circle shaped
+  // The colors are called "color stops"
+  @include radial-gradient(right top, circle cover,
+    $moon-gray,
+    $moon-glow,
+    $gray-into-blue,
+    $dark-blue,
+    $light-purple,
+    $magenta
   );
 }
 
