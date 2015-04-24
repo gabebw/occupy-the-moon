@@ -7,16 +7,7 @@
 //************** GENERAL STUFF
 
 body {
-  // gray, the color of the part that looks like an actual moon
-  $moon-gray: #DDD 3%;
-  // the soft glow of the moon
-  $moon-glow: #FFF 10%;
-  // gray again, to transition into blue. Start at low % to cut off white glow.
-  $gray-into-blue: rgb(21, 25, 26) 11%;
-  // super dark blue
-  $dark-blue: rgb(6, 7, 60) 30%;
-  // light purple
-  $light-purple: rgb(53, 28, 53) 80%;
+  $moon-gray: rgb(156, 141, 173) 3%;
   $magenta: rgb(111, 17, 76) 99%;
 
   color: white;
@@ -28,10 +19,6 @@ body {
   // The colors are called "color stops"
   background-image: radial-gradient(circle farthest-corner at right top,
     $moon-gray,
-    $moon-glow,
-    $gray-into-blue,
-    $dark-blue,
-    $light-purple,
     $magenta
   );
 }
