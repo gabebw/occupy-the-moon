@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+for name in application font-face; do
+  scss --sourcemap=none "scss/$name.scss" "public/css/$name.css"
+done

@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  color: white;
+  font: 16px QuicksandBook;
+  margin-top: 100px;
+  background-image: radial-gradient(circle farthest-corner at right top, #9c8dad 3%, #6f114c 99%); }
+
+em {
+  font-family: QuicksandBookOblique; }
+
+#container {
+  width: 600px;
+  margin: 0 auto; }
+
+#heading {
+  padding-bottom: 85px; }
+  #heading h1 {
+    font-size: 54px;
+    line-height: 90px;
+    padding-bottom: 10px; }
+    #heading h1 .the-moon {
+      font-family: "Helvetica Neue"; }
+  #heading h2 {
+    font-size: 30px;
+    line-height: 40px;
+    /* Super pro tip from C-mazz for thin fonts!
+     * This text-shadow is the same color as the background, sort of coloring the
+     * inside and making the outer edges disappear into the background.
+     */
+    text-shadow: 0 0 1px #0b0442; }
+
+#content {
+  padding-bottom: 45px; }
+
+#chart {
+  margin-bottom: 50px; }
+
+#testimonials {
+  float: left;
+  font-size: 18px;
+  margin-bottom: 20px; }
+  #testimonials #top-two {
+    margin-bottom: 90px; }
+  #testimonials .testimonial {
+    float: left;
+    width: 260px;
+    height: 250px; }
+  #testimonials .testimonial.right {
+    margin-left: 70px; }
+
+.testimonial .title {
+  font: 25px "Helvetica Neue";
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .testimonial .title em {
+    font-family: "Helvetica Neue"; }
+.testimonial .copy {
+  margin-bottom: 5px;
+  line-height: 140%; }
+.testimonial .author {
+  font-family: QuicksandBookOblique; }
+
+#footer {
+  float: left;
+  margin-bottom: 200px;
+  font-size: 20px; }
+  #footer .share {
+    float: left;
+    width: 240px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 20px 0 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: compact(inset 0 0 4px 0 rgba(0, 0, 0, 0.4), false, false, false, false, false, false, false, false);
+    -moz-box-shadow: compact(inset 0 0 4px 0 rgba(0, 0, 0, 0.4), false, false, false, false, false, false, false, false);
+    -ms-box-shadow: compact(inset 0 0 4px 0 rgba(0, 0, 0, 0.4), false, false, false, false, false, false, false, false);
+    -o-box-shadow: compact(inset 0 0 4px 0 rgba(0, 0, 0, 0.4), false, false, false, false, false, false, false, false);
+    box-shadow: compact(inset 0 0 4px 0 rgba(0, 0, 0, 0.4), false, false, false, false, false, false, false, false); }
+    #footer .share:first-child {
+      margin-right: 30px; }
+    #footer .share .hashtag {
+      float: left; }
+    #footer .share .tweet-button {
+      float: right;
+      width: 55px;
+      height: 40px;
+      margin-right: 20px; }

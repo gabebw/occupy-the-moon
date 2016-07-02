@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+
+scp -r public/* i:/nginx-data/occupy-the-moon
