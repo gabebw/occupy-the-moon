@@ -63,28 +63,3 @@ em {
   line-height: 140%; }
 .testimonial .author {
   font-family: QuicksandBookOblique; }
-
-#footer {
-  float: left;
-  margin-bottom: 200px;
-  font-size: 20px; }
-  #footer .share {
-    float: left;
-    width: 240px;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 20px 20px 0 20px;
-    border-radius: 5px;
-    -webkit-box-shadow: compact(inset 0 0 4px 0 rgba(0, 0, 0, 0.4), false, false, false, false, false, false, false, false);
-    -moz-box-shadow: compact(inset 0 0 4px 0 rgba(0, 0, 0, 0.4), false, false, false, false, false, false, false, false);
-    -ms-box-shadow: compact(inset 0 0 4px 0 rgba(0, 0, 0, 0.4), false, false, false, false, false, false, false, false);
-    -o-box-shadow: compact(inset 0 0 4px 0 rgba(0, 0, 0, 0.4), false, false, false, false, false, false, false, false);
-    box-shadow: compact(inset 0 0 4px 0 rgba(0, 0, 0, 0.4), false, false, false, false, false, false, false, false); }
-    #footer .share:first-child {
-      margin-right: 30px; }
-    #footer .share .hashtag {
-      float: left; }
-    #footer .share .tweet-button {
-      float: right;
-      width: 55px;
-      height: 40px;
-      margin-right: 20px; }

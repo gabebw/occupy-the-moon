@@ -111,35 +111,3 @@ em {
     font-family: QuicksandBookOblique;
   }
 }
-
-//************** FOOTER
-
-#footer {
-  float: left;
-  margin-bottom: 200px;
-  font-size: 20px;
-
-  .share {
-    float: left;
-    width: 240px;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 20px 20px 0 20px;
-    border-radius: 5px;
-    @include box-shadow(inset 0 0 4px 0 rgba(0, 0, 0, 0.4));
-
-    &:first-child {
-      margin-right: 30px;
-    }
-
-    .hashtag {
-      float: left;
-    }
-
-    .tweet-button {
-      float: right;
-      width: 55px;
-      height: 40px;
-      margin-right: 20px;
-    }
-  }
-}
