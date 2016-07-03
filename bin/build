@@ -2,6 +2,4 @@
 
 set -e
 
-for name in application font-face; do
-  bundle exec scss --sourcemap=none "scss/$name.scss" "public/css/$name.css"
-done
+bundle exec scss --sourcemap=none scss/application.scss public/css/application.css

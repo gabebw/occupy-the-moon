@@ -1,1 +1,123 @@
-@import "style";
+@font-face {
+  font-family: QuicksandBook;
+  src: url(/fonts/Quicksand_Book.otf) format("opentype");
+}
+
+@font-face {
+  font-family: QuicksandBookOblique;
+  src: url(/fonts/Quicksand_Book_Oblique.otf) format("opentype");
+}
+
+// The extremely poor man's reset.
+* {
+  padding: 0;
+  margin: 0;
+}
+
+//************** GENERAL STUFF
+
+body {
+  $moon-gray: rgb(156, 141, 173) 3%;
+  $magenta: rgb(111, 17, 76) 99%;
+
+  color: white;
+  font: 16px QuicksandBook;
+  margin-top: 100px;
+  // http://www.impressivewebs.com/css3-radial-gradient-syntax/
+  // This is the fancy-pants new syntax.
+  // start the gradient at the top right and make it circle shaped
+  // The colors are called "color stops"
+  background-image: radial-gradient(circle farthest-corner at right top,
+    $moon-gray,
+    $magenta
+  );
+}
+
+em {
+  font-family: QuicksandBookOblique;
+}
+
+#container {
+  // Use a column that is the width of the heading.
+  width: 600px;
+  margin: 0 auto; }
+
+//************** HEADING
+
+#heading {
+  padding-bottom: 85px;
+
+  h1 {
+    font-size: 54px;
+    line-height: 90px;
+    padding-bottom: 10px;
+    .the-moon {
+      font-family: "Helvetica Neue";
+    }
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+    /* Super pro tip from C-mazz for thin fonts!
+     * This text-shadow is the same color as the background, sort of coloring the
+     * inside and making the outer edges disappear into the background.
+     */
+    text-shadow: 0 0 1px rgb(11, 4, 66);
+  }
+}
+
+//************** CONTENT
+
+#content {
+  padding-bottom: 45px;
+}
+
+//************** CHART
+
+#chart {
+  margin-bottom: 50px;
+}
+
+//************** TESTIMONIALS
+
+#testimonials {
+  float: left;
+  font-size: 18px;
+  margin-bottom: 20px;
+  #top-two {
+    margin-bottom: 90px;
+  }
+
+  .testimonial {
+    float: left;
+    width: 260px;
+    height: 250px;
+  }
+
+  .testimonial.right {
+    margin-left: 70px;
+  }
+}
+
+.testimonial {
+  .title {
+    font: 25px "Helvetica Neue";
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    em {
+      font-family: "Helvetica Neue";
+    }
+  }
+
+  .copy {
+    margin-bottom: 5px;
+    line-height: 140%;
+  }
+
+  .author {
+    font-family: QuicksandBookOblique;
+  }
+}
