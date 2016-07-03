@@ -2,4 +2,5 @@
 
 set -e
 
+ssh i 'rm -rf /nginx-data/occupy-the-moon/*'
 scp -r public/* i:/nginx-data/occupy-the-moon
